@@ -1,0 +1,244 @@
+%\documentclass[PhD]{iitddiss}
+%\documentclass[MS]{iitddiss}
+% \documentclass[MTech]{iitddiss}
+\documentclass[Dual]{iitddiss}
+%\documentclass[BTech]{iitddiss}
+% \documentclass[Other]{iitddiss}
+% IF YOU USE THE OTHER OPTION, THEN YOU MUST FILL OUT THE PROGRAM OPTION BELOW TOO
+% \program{My Fancy Degree}
+
+% \usepackage{times}
+ \usepackage{t1enc}
+
+\usepackage{graphicx}
+\usepackage{hyperref} % hyperlinks for references.
+\usepackage{amsmath} % easier math formulae, align, subequations \ldots
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{fancyhdr}
+\usepackage{subcaption}
+\usepackage{float}
+\setcounter{secnumdepth}{3}
+\linespread{1.2}
+
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+
+\fancyhf{}
+
+\rhead{\fancyplain{}{\thepage}} % predefined ()
+\lhead{\fancyplain{}{\rightmark}} % 1. sectionname, 1.1 subsection name etc
+\cfoot{\textcopyright \text{ } \the\year, \emph{Indian Institute of Technology Delhi}}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title page
+
+\title{ESTIMATION OF URBANISATION IN INDIAN DISTRICTS}
+
+\author{Aditi Singla}
+\authortwo{Prachi Singh}
+\advisor{Prof. Aaditeshwar Seth}
+\entrynumber{2014CS50277}
+\entrynumbertwo{2014CS50289}
+\date{June 2019}
+\department{Computer Science and Engineering}
+
+%\nocite{*}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Certificate
+\certificate
+
+\vspace*{0.5in}
+
+\noindent This is to certify that the thesis titled {\bf ESTIMATION OF 
+URBANISATION IN INDIAN DISTRICTS}, submitted by {\bf Aditi Singla} and 
+{\bf Prachi Singh}, to the Indian Institute of Technology, Delhi, for
+the award of the degree of {\bf Bachelor and Master of Technology}, is 
+a bonafide record of the research work done by them under our supervision. 
+The contents of this thesis, in full or in parts, have not been submitted
+to any other Institute or University for the award of any degree or
+diploma.
+
+\vspace*{3in}
+
+\begin{singlespacing}
+\noindent {\bf Prof. Aaditeshwar Seth} \\
+\noindent Professor \\
+\noindent Dept. of Computer Science \& Engineering\\
+\noindent IIT-Delhi, 600 036 \\
+\end{singlespacing}
+\vspace*{0.25in}
+\\
+\noindent Place: New Delhi \\
+\noindent Date: 27th June 2019
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acknowledgements
+\acknowledgements
+
+We would like to wholeheartedly thank our advisor Prof. Aaditeshwar Seth 
+for guiding us at each and every step of our project work. He helped us 
+in learning on how to approach a problem by looking from different 
+perspectives and taking a step back to see the bigger picture, which we 
+would carry for the rest of our careers.   
+
+We would also like to thank Bipul, Ayush, Dibyajyoti, Arpit and Shyam with 
+whom we had long and valuable discussions on various issues that we faced 
+and the possible approaches we could take. We are also grateful to the Google 
+Earth community for answering our numerous queries on their discussion forums
+and helping us in every way possible. We would also like to extend our thanks 
+to the staff of CSE and SIT departments.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract
+
+\abstract
+
+\noindent KEYWORDS: \hspace*{0.5em} \parbox[t]{4.4in}{Urbanisation; LANDSAT8;
+  Settlement Delineation; Spatial Analysis; Extent of Urbanisation; Patterns of
+  Urbanisation; India.}
+
+\vspace*{24pt}
+
+\noindent Recently, there has been a rapid increase in the population, 
+especially in the developing nations like India. The existing cities have 
+expanded and new settlement areas have been established. Although this has 
+lifted the people in rural regions out of poverty, many factors like health, 
+resource availability, etc. have been compromised. We here attempt to 
+understand urbanisation and give a mechanism to estimate it, which can then 
+help the government in better health planning and resource allocation.
+
+This problem has got a lot of attention in the community and various attempts 
+have been made to use census data, satellite imagery data and social media data 
+collection, to obtain the above mentioned attributes and give an urbanisation 
+estimate. We use the technique of spatial analysis using remotely sensed satellite 
+data to give and urbanisation estimate. We define urbanisation as the extent and 
+the distribution of change in built-up regions. To achieve this, we perform 
+settlement delineation by applying pixel-wise classification models on the satellite 
+imagery to generate an estimate of built-up regions at district level. Once this is 
+done, we perform a temporal analysis on the spatial distribution of the built-up 
+regions to generate these parameters to represent the urbanisation index.
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Table of contents etc.
+
+\begin{singlespace}
+\tableofcontents
+\thispagestyle{empty}
+
+% \listoftables
+% \addcontentsline{toc}{chapter}{LIST OF TABLES}
+% \listoffigures
+% \addcontentsline{toc}{chapter}{LIST OF FIGURES}
+\end{singlespace}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abbreviations
+% \abbreviations
+
+% \noindent
+% \begin{tabbing}
+% xxxxxxxxxxx \= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \kill
+% \textbf{IITD}   \> Indian Institute of Technology, Delhi \\
+% \textbf{RTFM} \> Read the Fine Manual \\
+% \end{tabbing}
+
+% \pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Notation
+
+% \chapter*{\centerline{NOTATION}}
+% \addcontentsline{toc}{chapter}{NOTATION}
+
+% \begin{singlespace}
+% \begin{tabbing}
+% xxxxxxxxxxx \= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \kill
+% \textbf{$r$}  \> Radius, $m$ \\
+% \textbf{$\alpha$}  \> Angle of thesis in degrees \\
+% \textbf{$\beta$}   \> Flight path in degrees \\
+% \end{tabbing}
+% \end{singlespace}
+
+\pagebreak
+\clearpage
+
+% The main text will follow from this point so set the page numbering
+% to arabic from here on.
+\pagenumbering{arabic}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Introduction.
+
+\chapter{INTRODUCTION}
+\label{chap:intro}
+
+\input{introduction}
+
+\chapter{BACKGROUND}
+\label{chap:background}
+
+\input{background}
+
+\chapter{PROPOSED METHODOLOGY: OVERVIEW}
+\label{chap:outline}
+
+\input{outline}
+
+\chapter{PROPOSED METHODOLOGY: COMPONENT-WISE}
+\label{chap:methodology}
+
+\input{methodology}
+
+\chapter{RESULTS}
+\label{chap:results}
+
+\input{results}
+
+\chapter{CONCLUSION}
+\label{chap:conclusion}
+
+\input{conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendices.
+
+% \appendix
+
+% \chapter{A SAMPLE APPENDIX}
+
+% Just put in text as you would into any chapter with sections and
+% whatnot.  Thats the end of it.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography.
+
+\begin{singlespace}
+  \bibliography{refs}
+\end{singlespace}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of papers
+
+% \listofpapers
+
+% \begin{enumerate}
+% \item Authors....  \newblock
+%  Title...
+%   \newblock {\em Journal}, Volume,
+%   Page, (year).
+% \end{enumerate}
+
+\end{document}

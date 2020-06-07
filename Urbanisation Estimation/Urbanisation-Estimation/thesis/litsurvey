@@ -1,0 +1,82 @@
+
+7. ndvi1
+	09/2016: 2016v10is3_4_13.pdf
+	SPECIFIC FEATURES OF NDVI, NDWI AND MNDWI AS REFLECTED IN LAND COVER CATEGORIES
+	- Three spectral indices (NDVI, NDWI, MNDWI) were investigated from the aspect of land cover types: water body (W); plough land (PL); forest (F); vineyard (V); grassland (GL) and built-up areas (BU) using Landsat-7 ETM+ data
+	- In BU – GL – F categories similar NDVI values were calculated, but the other land cover types differed significantly.
+	- Investigate the ranges of three spectral indices from the aspect of land cover types.
+
+3. novelspectralindices
+	*** 11/2018: new derived bands for landuse classification.pdf
+	Urban landcovers based on Novel Spectral Indices
+	- three new spectral indices and an approach to classifying four major urban land types: impervious, bare land, vegetation, and water
+	- MNDBI, TCWVI, ShDI
+	- discusses the downs of using classifiers, and about the papers using basic ndbi, ndvi
+
+6. ndvi2
+	10/2015: An automatic approach for urban land cover classification from Landsat 8 OLI data.pdf
+	Based on NDBI and NDVI
+	- Object oriented methods, instead of pixel based classification
+	- A wealth of indices has been designed to quantify the biophysical characteristics of the earth’s surface, the best known being the normalized difference vegetation index (NDVI) (Crippen 1990). Other commonly used indices include the normalized difference water index (NDWI), the modified normalized difference water index (MNDWI) (Gao 1996; Xu 2006), the soil adjusted vegetation index (SAVI) (Huete 1988), and the normalized difference built-up index (NDBI) (Zha,Gao, and Ni 2003).
+	- GOOD LIT SURVEY SECTION
+	- Introduces new parameters and then uses non linear SVM to train over these data points
+
+1. 08/2016: remotesensing-08-00634.pdf
+	Paper by Goldblatt : Remote sensing (Boundaries of Urban Areas, pixel wise classification)
+	- Constructed a large-scale and comprehensive georeferenced dataset designed for the express purpose of mapping urban areas
+	- Validate this dataset and demonstrate its applicability for mapping urban areas at the national level for India
+	- Compare different types of classifiers and inputs in GEE
+	- Methodology designed to evaluate the spatial generalizability of the classifiers, using a spatial k-fold cross-validation procedure
+
+	- Detection of LC/LU using remote sensing can be performed at the level of a pixel (pixel-based), or at the level of an object (object-based), where pixels are grouped together to provide contextual information, such as image texture, pixel proximity, and salient geometric attributes of features. While several studies suggest that object-based classifiers outperform pixel-based classifiers in LC/LU classifications tasks [36–39], other studies suggest that pixel-based and object-based classifiers perform similarly when utilizing common machine-learning algorithms [40]. In addition, object-based classification requires significantly more computational power than pixel-based classification and there is no universally accepted method to determine an optimal scale level for image segmentation [37], especially when analyzing large-scale geographically diverse regions. 
+	- Utilizes the full spectral imagery available in Landsat, as well as NDVI (Normalized Difference Vegetation Index) and NDBI (Normalized difference Built-up Index) indices.
+	- India contains 15 distinct agro-climatic zones. These zones are geographical regions characterized by relatively homogenous environmental-physical characteristics, such as soil type, rainfall, temperature, and water resources. training set that would incorporate agro-climatic zones found in the large majority of developing countries
+
+	- Evaluation of performance based on:
+		(1) True-Positive Rate (TPR) (the percentage of actual BU examples classified correctly as BU);
+		(2) True-Negative Rate (TNR) (the percentage of actual NBU examples classified correctly as NBU);
+		(3) the average of TPR and TNR (referred to as the balanced accuracy rate).
+	- Three performance estimators related to the classification of the positive (BU) class:
+		(1) Overall accuracy rate: the portion of instances that were classified correctly (calculated as: (TP + TN)/(TP + TN + FP + FN));
+		(2) Precision rate: the portion of instances that were correctly predicted as positive out of all instances that were predicted as positive (calculated as TP/(TP + FP));
+		(3) Recall rate: the portion of instances that were correctly predicted as positive out of all actual positive instances (calculated as TP/(TP + FN)).
+
+2. vietnam
+	03/2018: satellite data for urban classification in vietnam.pdf
+	Paper by Goldblatt : Vietnam
+	- Objectives of this study:
+		(1) to present a reliable, low-cost tool that uses publicly available satellite data and cloud-based computational platform to map built-up LC/LU in HCMC, Vietnam;
+		(2) to map temporal changes in the extent of built-up land cover in the province, over the period 2000 to 2015;
+		(3) to evaluate the use of administrative vector data as reference for supervised image classification;
+		(4) to evaluate the association between the extent of built-up land cover and the distribution of the population and economic activity in the province.
+
+	- Two types of reference data for supervised pixel-based image classification: GDLA administrative cadastral data (polygons) and hand-labeled examples (points).
+	- Categorization of GDLA LC/LU as “not-built-up” land cover, “residential” and “non-residential” land use.
+	- 15,945 hand labelled points, which we hand-label as one of three classes: “BU residential”, “BU non-residential”, or “NBU”.
+	- Evaluation:
+		1. Producer's accuracy (TPR) = TP/(TP + FN)
+		2. TNR = TN/(TN + FP)
+		3. Balanced Accuracy = (TPR + TNR)/2
+		4. User's accuracy = TP/(TP + FP)
+	- GDLA vs handlabeled points as training set for the supervised classification
+	- Urbanisation over time from 2000 to 2015
+
+9. classificationreview
+	09/2017: remotesensing-09-00967-review on methods.pdf
+	Developments in Landsat Land Cover Classification Methods: A Review
+
+8. urbanexpansion
+	2012: Understanding_and_Measuring_Urban_Expansion.pdf
+	Understanding and Measuring Urban Expansion
+	- Define urban, suburban and rural pixels: 50+, 25-50, 50-
+	- Fringe, captured and rural open space
+	- Largest urban clusters
+
+4. urbanisationcensus
+	12/2018: urbanization and census data comparison.pdf
+	Undestanding urbanisation (Urbanisation and census data):
+
+5. goldblattnighttime
+	02/2018: Final_RSE_10519.pdf
+	Goldblatt: Landsat and nightlights
+	- Combines nighttime-lights data and Landsat 8 and overcomes the lack of extensive ground-reference data.

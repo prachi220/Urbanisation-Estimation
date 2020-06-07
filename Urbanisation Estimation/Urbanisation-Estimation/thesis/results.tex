@@ -1,0 +1,94 @@
+Using our analysis and validation, we hereby have a pipeline to generate the 9 parametes to estimate urbanisation in a district using spatial analysis on remotely sensed imagery. For our complete analysis on Gurgaon and Jaipur, the parameters generated can be found in Table.~\ref{tab:urbanisation}.
+
+% insert table showing these indices for gurgaon and jaipur
+{\renewcommand{\arraystretch}{1.2} %<- modify value to suit your needs
+\begin{table}[htbp]
+	\begin{center}
+		\begin{tabular}[c]{|l|c|c|} \hline
+			{\bf Paramter} 											&  {\bf Gurgaon}	& {\bf Jaipur} 	\\ \hline
+			\% of Constantly NBU  									&  78.1858 			& 97.36003 		\\ \hline
+			\% of Constantly BU  									&  8.2863			& 1.5895  		\\ \hline
+			\% of Changing 											&  13.5279 			& 1.0505		\\ \hline
+			Num of blobs for constant regions						&  522 				& 5182 			\\ \hline
+			\% BU in largest blob for constant regions  			&  56.2209			& 43.5371 		\\ \hline
+			HHI Index for constant regions 							&  3240.73			& 1905.69 		\\ \hline
+			Num of blobs for constant \& changing regions  			&  127 				& 3891			\\ \hline
+			\% BU in largest blob for constant \& changing regions  &  66.9556 			& 46.3907		\\ \hline
+			HHI Index for constant \& changing regions 				&  4839.49 			& 2169.8		\\ \hline
+		\end{tabular}
+	\end{center}
+	\caption{Parameters generated for Urbanisation Index}
+	\label{tab:urbanisation}
+\end{table} 
+}
+
+The first three parameters represent the extent of urbanisation by discussing the changing and not changing percentages over the given time period. Since, most of the region in Jaipur is non-settlement area, we can see that the percentage of constantly NBU pixels for it is way higher than that for Gurgaon. Also, Gurgaon being a part of the NCR has seen a rapid development and hence rapid urbanisation. This is also validated by the observation that the percentage of constantly BU pixels is less than the percentage of changing pixels, which is remarkable in terms of urbanisation.
+
+The last six parameters together represent the patterns of change in urban clusters. Here, we observe a visible change in the duration of 5 years, where urbanisation occurs around the peripherals of the urban cluster center. We also need to understand that although the largest blob has considerably expanded, it doesn't mean that the areas in the periphery were non-builtup earlier. It just means that these smaller hamlets/clusters got merged with the bigger cluster. We also observe that the number of blobs has reduced and now we have larger and lesser blobs. This is quantitatively conveyed by the increasing HHI index. Comparing Gurgaon and Jaipur, we observe that Jaipur has much higher number of hamlets and remote settlement areas than Jaipur, represented by the number of blobs. Apart from this, although Jaipur has a significantly dense urban cluster at the center, the HHI index for it is lower than Gurgaon. This can be accounted for by the extremely large number of smaller clusters/hamlets.
+
+We extend this analysis on a larger set of 186 districts spread across 9 states. The distribution of these 9 parameters over these districts, calculated as the cumulative distribution (CDF) can be seen in Fig.~\ref{fig:distresults}.
+
+\begin{figure}[H]
+	\begin{center}
+		\begin{subfigure}[b]{0.4\textwidth}
+			\centering
+			\resizebox{70mm}{!} {\includegraphics *{images/results/CNBUcdf.png}}
+			\caption{CDF plot: \% of Constantly BU}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.4\textwidth}
+			\centering
+			\resizebox{70mm}{!} {\includegraphics *{images/results/CBUcdf.png}}
+			\caption{CDF plot: \% of Constantly BU}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.4\textwidth}
+			\centering
+			\resizebox{70mm}{!} {\includegraphics *{images/results/Changingcdf.png}}
+			\caption{CDF plot: \% of Changing}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.4\textwidth}
+			\centering
+			\resizebox{70mm}{!} {\includegraphics *{images/results/Num_blobs_conscdf.png}}
+			\caption{CDF plot: Num of blobs for constant regions}
+		\end{subfigure}
+		\caption {Distribution plots of 9 parameters for 186 districts}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]\ContinuedFloat
+	\begin{center}
+		\begin{subfigure}[b]{0.4\textwidth}
+			\centering
+			\resizebox{70mm}{!} {\includegraphics *{images/results/BU_in_largest_blob_conscdf.png}}
+			\caption{CDF plot: \% BU in largest blob for constant regions}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.4\textwidth}
+			\centering
+			\resizebox{70mm}{!} {\includegraphics *{images/results/hhi_conscdf.png}}
+			\caption{CDF plot: HHI Index for constant regions}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.4\textwidth}
+			\centering
+			\resizebox{70mm}{!} {\includegraphics *{images/results/Num_blobs_finalcdf.png}}
+			\caption{CDF plot: Num of blobs for constant \& changing regions}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.4\textwidth}
+			\centering
+			\resizebox{70mm}{!} {\includegraphics *{images/results/BU_in_largest_blob_finalcdf.png}}
+			\caption{CDF plot: \% BU in largest blob for constant \& changing regions}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.4\textwidth}
+			\centering
+			\resizebox{70mm}{!} {\includegraphics *{images/results/hhi_finalcdf.png}}
+			\caption{CDF plot: HHI Index for constant \& changing regions}
+		\end{subfigure}
+		\caption {Distribution plots of 9 parameters for 186 districts (cont.)}
+		\label{fig:distresults}
+	\end{center}
+\end{figure}

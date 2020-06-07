@@ -1,0 +1,54 @@
+Assam
+['Kokrajhar', 'Dhubri', 'Goalpara', 'Bongaigaon', 'Barpeta', 'Kamrup', 'Nalbari', 'Darrang', 'Marigaon', 'Nagaon', 'Sonitpur', 'Lakhimpur', 'Dhemaji', 'Tinsukia', 'Dibrugarh', 'Sibsagar', 'Jorhat', 'Golaghat', 'Karbi Anglong', 'North Cachar Hills', 'Cachar', 'Karimganj', 'Hailakandi'];
+
+'Sibsagar'
+
+-----------------------------------------------------------
+
+Bihar
+['Pashchim Champaran', 'Purba Champaran', 'Sheohar', 'Sitamarhi', 'Madhubani', 'Supaul', 'Araria', 'Kishanganj', 'Purnia', 'Katihar', 'Madhepura', 'Saharsa', 'Darbhanga', 'Muzaffarpur', 'Gopalganj', 'Siwan', 'Saran', 'Vaishali', 'Samastipur', 'Begusarai', 'Khagaria', 'Bhagalpur', 'Banka', 'Munger', 'Lakhisarai', 'Sheikhpura', 'Nalanda', 'Patna', 'Bhojpur', 'Buxar', 'Kaimur', 'Rohtas', 'Jehanabad', 'Aurangabad', 'Gaya', 'Nawada', 'Jamui'];
+
+-----------------------------------------------------------
+
+Chhattisgarh
+['Koriya', 'Surguja', 'Jashpur', 'Raigarh', 'Korba', 'Janjgir-Champa', 'Bilaspur', 'Kawardha', 'Rajnandgaon', 'Durg', 'Raipur', 'Mahasamund', 'Dhamtari', 'Kanker', 'Bastar', 'Dantewada'];
+
+=>'Janjgir-Champa'
+'Kawardha', 'Kanker'
+
+-----------------------------------------------------------
+
+Jharkhand
+['Garhwa', 'Palamu', 'Chatra', 'Hazaribagh', 'Kodarma', 'Giridih', 'Deoghar', 'Godda', 'Sahibganj', 'Pakaur', 'Dumka', 'Dhanbad', 'Bokaro', 'Ranchi', 'Lohardaga', 'Gumla', 'Pashchimi Singhbhum', 'Purbi Singhbhum'];
+
+'Pakaur'
+
+-----------------------------------------------------------
+
+Odisha
+['Bargarh', 'Jharsuguda', 'Sambalpur', 'Debagarh', 'Sundargarh', 'Kendujhar', 'Mayurbhanj', 'Baleshwar', 'Bhadrak', 'Kendrapara', 'Jagatsinghapur', 'Cuttack', 'Jajapur', 'Dhenkanal', 'Anugul', 'Nayagarh', 'Khordha', 'Puri', 'Ganjam', 'Gajapati', 'Kandhamal', 'Baudh', 'Subarnapur', 'Balangir', 'Nuapada', 'Kalahandi', 'Rayagada', 'Nabarangapur', 'Koraput', 'Malkangiri'];
+
+'Baudh'
+
+-----------------------------------------------------------
+
+Madhya 	Pradesh
+['Sheopur', 'Morena', 'Bhind', 'Gwalior', 'Datia', 'Shivpuri', 'Guna', 'Tikamgarh', 'Chhatarpur', 'Panna', 'Sagar', 'Damoh', 'Satna', 'Rewa', 'Umaria', 'Shahdol', 'Sidhi', 'Neemuch', 'Mandsaur', 'Ratlam', 'Ujjain', 'Shajapur', 'Dewas', 'Jhabua', 'Dhar', 'Indore', 'West Nimar', 'Barwani', 'East Nimar', 'Rajgarh', 'Vidisha', 'Bhopal', 'Sehore', 'Raisen', 'Betul', 'Harda', 'Hoshangabad', 'Katni', 'Jabalpur', 'Narsimhapur', 'Dindori', 'Mandla', 'Chhindwara', 'Seoni', 'Balaghat'];
+
+-----------------------------------------------------------
+
+Rajasthan
+['Ganganagar', 'Hanumangarh', 'Bikaner', 'Churu', 'Jhunjhunun', 'Alwar', 'Bharatpur', 'Dhaulpur', 'Karauli', 'Sawai Madhopur', 'Dausa', 'Jaipur', 'Sikar', 'Nagaur', 'Jodhpur', 'Jaisalmer', 'Barmer', 'Jalor', 'Sirohi', 'Pali', 'Ajmer', 'Tonk', 'Bundi', 'Bhilwara', 'Rajsamand', 'Udaipur', 'Dungarpur', 'Banswara', 'Chittaurgarh', 'Kota', 'Baran', 'Jhalawar'];
+
+-----------------------------------------------------------
+
+Uttar Pradesh
+['Saharanpur', 'Muzaffarnagar', 'Bijnor', 'Moradabad', 'Rampur', 'Amroha', 'Meerut', 'Baghpat', 'Ghaziabad', 'Gautam Buddha Nagar', 'Bulandshahr', 'Aligarh', 'Hathras', 'Mathura', 'Agra', 'Firozabad', 'Etah', 'Mainpuri', 'Budaun', 'Bareilly', 'Pilibhit', 'Shahjahanpur', 'Lakhimpur Kheri', 'Sitapur', 'Hardoi', 'Unnao', 'Lucknow', 'Rae Bareli', 'Farrukhabad', 'Kannauj', 'Etawah', 'Auraiya', 'Kanpur Dehat', 'Kanpur Nagar', 'Jalaun', 'Jhansi', 'Lalitpur', 'Hamirpur', 'Mahoba', 'Banda', 'Chitrakoot', 'Fatehpur', 'Pratapgarh', 'Kaushambi', 'Allahabad', 'Barabanki', 'Faizabad', 'Ambedkar Nagar', 'Sultanpur', 'Bahraich', 'Shravasti', 'Balrampur', 'Gonda', 'Siddharth Nagar', 'Basti', 'Sant Kabir Nagar', 'Maharajganj', 'Gorakhpur', 'Kushinagar', 'Deoria', 'Azamgarh', 'Mau', 'Ballia', 'Jaunpur', 'Ghazipur', 'Chandauli', 'Varanasi', 'Sant Ravidas Nagar Bhadohi', 'Mirzapur', 'Sonbhadra'];
+
+=>'Siddharth Nagar'
+'Sant Ravidas Nagar Bhadohi'
+
+-----------------------------------------------------------
+
+Uttarakhand
+['Uttarkashi', 'Chamoli', 'Rudraprayag', 'Tehri Garhwal', 'Dehradun', 'Garhwal', 'Pithoragarh', 'Bageshwar', 'Almora', 'Champawat', 'Nainital', 'Udham Singh Nagar', 'Hardwar'];
